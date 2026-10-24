@@ -6,15 +6,27 @@
 
     <link rel="stylesheet" href="style.css"/>
     <script src="script.js" defer></script>
+    <!-- meta viewport stuff maybe whatever idk?!!??!!!-->
   </head>
   <body>
-    <h1>Dog Of The Day</h1>
-    <h2>00.00.0000</h2>
-    <img id="dog" height="400" alt="sorry, we are currently out of dogs :( 🐶" />
-    <p>Test</p>
-    <p id="caption">...</p>
-    <footer>Dog photos via <a href="https://dog.ceo/dog-api/">Dog CEO</a></footer>
+    <main>
+      <div class="header-box">
+        <h1>Dog Of The Day</h1>
+        <h2>00.00.0000</h2>
+      </div>
 
+      <div class="box">
+        <img id="dog" alt="sorry, we are currently out of dogs :( 🐶"/>
+      </div>
+
+      <p hidden>Test</p>
+      <p id="caption" hidden>...</p>
+
+    </main>
+
+    <footer>
+      <p>Dog photos via <a href="https://dog.ceo/dog-api/" target="_blank" title="External link (opens in new tab)">Dog CEO</a></p>
+    </footer>
     <!--
     <script>
       fetch("https://dog.ceo/api/breeds/image/random")
@@ -22,6 +34,7 @@
         .then(data => {
           document.getElementById("dog").src = data.message;
       });
-  </script>-->
+    </script>
+    -->
   </body>
 </html>
