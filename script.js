@@ -20,6 +20,8 @@ async function showDailyDog(dayNumber) {
 
   document.getElementById("caption").textContent = breed;
   document.getElementById("dog").src = imageUrl;
+  // this seems like a badd idea
+  document.getElementById("dog").title = breed;
 }
 
 showDailyDog(day);
